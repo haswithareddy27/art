@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Art Gallery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f6f5f5;
+      --panel:#ffffff;
+      --muted:#9b9b9b;
+      --accent:#2f2f2f;
+      --card-border: rgba(0,0,0,0.06);
+      font-family: "Inter";
+    }
+
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--accent);
+    }
+
+    
+    .site-header{
+      background:linear-gradient(180deg, #ffffff, #fafafa);
+      border-bottom:1px solid var(--card-border);
+      padding:14px 28px;
+      display:flex;
+      align-items:center;
+      gap:18px;
+    }
+    .logo{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      font-weight:700;
+    }
+    .logo img{
+      height:55px;
+    }
+    .nav{
+      display:flex;
+      gap:18px;
+      margin-left:30px;
+    }
+    .nav a{
+      text-decoration:none;
+      color:var(--muted);
+      font-size:18px;
+      padding:8px 6px;
+    }
+    .spacer{flex:1}
+    .header-actions{
+      display:flex;
+      gap:10px;
+      align-items:center;
+    }
+
+    
+    .container{
+      max-width:1200px;
+      margin:30px auto;
+      padding:0 22px;
+    }
+    h1{
+      text-align:center;
+      font-weight:500;
+      color:#7f7f7f;
+      letter-spacing:2px;
+    }
+
+    
+    .artists-grid{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap:18px;
+      margin-top:25px;
+    }
+
+    .artist-card{
+      background:#f5f5f5;
+      border:1px solid var(--card-border);
+      padding:14px;
+      display:flex;
+      align-items:center;
+      gap:14px;
+      text-decoration:none;
+      color:inherit;
+      transition:all 0.2s ease;
+    }
+    .artist-card:hover{
+      box-shadow:0 3px 8px rgba(155, 233, 241, 0.08);
+      transform:translateY(-7px);
+    }
+    .artist-card img{
+      width:50px;
+      height:60px;
+      object-fit:cover;
+      border-radius:2px;
+      border:1px solid rgba(17, 15, 15, 0.06);
+    }
+    .artist-name{
+      font-weight:600;
+      font-size:13px;
+      text-transform:uppercase;
+      letter-spacing:0.6px;
+    
+    }
+
+
+    @media (max-width:1000px){
+      .artists-grid{grid-template-columns: repeat(2, 1fr);}
+    }
+    @media (max-width:640px){
+      .artists-grid{grid-template-columns: 1fr;}
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="logo">
+      <img src="Screenshot 2025-11-10 at 3.12.54 PM.png" alt="Logo">
+    </div>
+
+    <nav class="nav">
+      <a href="home.html">Home</a>
+      
+      
+    </nav>
+
+    <div class="spacer"></div>
+
+    <div class="header-actions">
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>ARTISTS</h1>
+
+    <section class="artists-grid">
+      <a href="artist1.html" class="artist-card">
+        <img src="a.-ramachandran-.jpg" alt="A. Ramachandran">
+        <div class="artist-name">A. RAMACHANDRAN</div>
+      </a>
+
+      <a href="artist2.html" class="artist-card">
+        <img src="PYRUYMKG_avatar_medium_square.jpg" alt="Ajay Choudhary">
+        <div class="artist-name">AJAY CHOUDHARY</div>
+      </a>
+
+      <a href="artist3.html" class="artist-card">
+        <img src="artist-AKPA-01.jpg" alt="Akbar Padamsee">
+        <div class="artist-name">AKBAR PADAMSEE</div>
+      </a>
+
+      <a href="artist4.html" class="artist-card">
+        <img src="0006104_alpesh-dave_450.jpeg" alt="Alpesh Dave">
+        <div class="artist-name">ALPESH DAVE</div>
+      </a>
+
+      <a href="artist5.html" class="artist-card">
+        <img src="amit_ambalal_cover.jpg" alt="Amit Ambalal">
+        <div class="artist-name">AMIT AMBALAL</div>
+      </a>
+
+      <a href="artist6.html" class="artist-card">
+        <img src="0013279_amruta-shambharkar_450.jpeg" alt="Amruta Shambharkar">
+        <div class="artist-name">AMRUTA SHAMBHARKAR</div>
+      </a>
+
+      <a href="artist7.html" class="artist-card">
+        <img src="0013738_anant-mehta_450.jpeg" alt="Anant Mehta">
+        <div class="artist-name">ANANT MEHTA</div>
+      </a>
+
+      <a href="artist8.html" class="artist-card">
+        <img src="0006016_anil-majmudar_450.png" alt="Anil Majmudar">
+        <div class="artist-name">ANIL MAJMUDAR</div>
+      </a>
+
+      <a href="artist9.html" class="artist-card">
+        <img src="Anil_Relia,_Art_Collector.jpg" alt="Anil Relia">
+        <div class="artist-name">ANIL RELIA</div>
+      </a>
+      <a href="artist10.html" class="artist-card">
+        <img src="anjolie-ela-menon-.jpg" alt="Amruta Shambharkar">
+        <div class="artist-name">ANJOLIE ELA MENON</div>
+      </a>
+      <a href="artist11.html" class="artist-card">
+        <img src="Anuj-Ambalal-Selected-1219-copy-0x0.jpg" alt="Amruta Shambharkar">
+        <div class="artist-name">ANUJ AMBALAL</div>
+      </a>
+      <a href="artist12.html" class="artist-card">
+        <img src="0005953_apurva-desai_450.jpeg" alt="Amruta Shambharkar">
+        <div class="artist-name">APURVA DESAI</div>
+      </a>
+      <a href="artist13.html" class="artist-card">
+        <img src="blank-profile-picture-973460_1280.png" alt="Amruta Shambharkar">
+        <div class="artist-name">ASHVIN MEHTA</div>
+      </a>
+      <a href="artist14.html" class="artist-card">
+        <img src="0006080_astha-patel_450.jpeg" alt="Amruta Shambharkar">
+        <div class="artist-name">ASTHA PATEL</div>
+      </a>
+      <a href="artist15.html" class="artist-card">
+        <img src="blank-profile-picture-973460_1280.png" alt="Amruta Shambharkar">
+        <div class="artist-name">ATMARAM BHATI</div>
+      </a>
+      <a href="artist16.html" class="artist-card">
+        <img src="images-2.jpeg" alt="Amruta Shambharkar">
+        <div class="artist-name">ATUL DODIYA</div>
+      </a>
+      <a href="artist17.html" class="artist-card">
+        <img src="blank-profile-picture-973460_1280.png" alt="Amruta Shambharkar">
+        <div class="artist-name">AVINASH THAKER</div>
+      </a>
+      <a href="artist18.html" class="artist-card">
+        <img src="SubramanianiBalkrishna-Doshi.jpg" alt="Amruta Shambharkar">
+        <div class="artist-name">B.V.DOSHI</div>
+      </a>
+      <a href="artist19.html" class="artist-card">
+        <img src="Baiju_Parthan_1200x1200.jpg" alt="Amruta Shambharkar">
+        <div class="artist-name">BAIJU PARTHAN</div>
+      </a>
+      <a href="artist20.html" class="artist-card">
+        <img src="blank-profile-picture-973460_1280.png" alt="Amruta Shambharkar">
+        <div class="artist-name">BALAKRISHNA PATEL</div>
+      </a>
+      <a href="artist21.html" class="artist-card">
+        <img src="0006024_bansi-khatri_450.png" alt="Amruta Shambharkar">
+        <div class="artist-name">BANSI KHATRI</div>
+      </a>
+      <a href="artist22.html" class="artist-card">
+        <img src="0005944_bhairavi-modi_450.jpeg" alt="Amruta Shambharkar">
+        <div class="artist-name">BHAIRAVI MODI</div>
+      </a>
+      <a href="artist23.html" class="artist-card">
+        <img src="0006035_bhanwar-singh-panwar_450.jpeg" alt="Amruta Shambharkar">
+        <div class="artist-name">BHANWAR SINGH PANWAR</div>
+      </a>
+      <a href="artist24.html" class="artist-card">
+        <img src="0006076_bharati-shah_450.jpeg" alt="Amruta Shambharkar">
+        <div class="artist-name">BHARATI SHAH</div>
+      </a>
+      <a href="artist25.html" class="artist-card">
+        <img src="images-3.jpeg" alt="Amruta Shambharkar">
+        <div class="artist-name">BHARVI TEIVEDI</div>
+      </a>
+      <a href="artist26.html" class="artist-card">
+        <img src="0006075_bhavesh-zala_450.jpeg" alt="Amruta Shambharkar">
+        <div class="artist-name">BHAVESH ZALA</div>
+      </a>
+      <a href="artist27.html" class="artist-card">
+        <img src="0013280_bikash-chandra-senapati_450.jpeg" alt="Amruta Shambharkar">
+        <div class="artist-name">BIKASH CHANDRA SENAPATI</div>
+      </a>
+      
+    </section>
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="curator.css">
+</head>
+<body>
+
+  
+  <header class="site-header" style="background-color:white; display:flex; justify-content:space-between; align-items:center; padding:10px 30px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+    <div class="logo" style="display:flex; align-items:center; gap:10px;">
+      <img src="Screenshot 2025-11-10 at 3.12.54 PM.png" alt="Gallery Logo" style="height:45px;">
+      <h1 style="margin:0; color:#333;"></h1>
+    </div>
+    <nav>
+      <a href="home.html" style="text-decoration:none; color:grey; font-size:17px; font-weight:500;">Home</a>
+    </nav>
+  </header>
+
+  <section class="intro">
+    <h2>Welcome to the website!</h2>
+    <p>Your role is to organize exhibitions.</p>
+  </section>
+
+  <section class="table-section">
+    <h2>Ongoing Exhibitions</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Exhibition</th>
+          <th>Theme</th>
+          <th>Curator</th>
+          <th>Start Date</th>
+          <th>End Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Colors of Heritage</td>
+          <td>Indian Folk Art</td>
+          <td>Rushmanth Nalluri</td>
+          <td>2025-11-15</td>
+          <td>2025-12-05</td>
+        </tr>
+        <tr>
+          <td>Modern Harmony</td>
+          <td>Contemporary Expressions</td>
+          <td>Haswitha</td>
+          <td>2025-12-10</td>
+          <td>2026-01-02</td>
+        </tr>
+        <tr>
+          <td>Nature's Palette</td>
+          <td>Landscapes and Wildlife</td>
+          <td>Harini</td>
+          <td>2026-01-10</td>
+          <td>2026-01-30</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="form-section">
+    <h2>Add New Exhibition</h2>
+    <form>
+      <label>Exhibition Name:</label>
+      <input type="text" placeholder="Enter Exhibition Name" required>
+
+      <label>Theme:</label>
+      <input type="text" placeholder="Enter Theme" required>
+
+      <label>Curator Name:</label>
+      <input type="text" placeholder="Enter Curator Name" required>
+
+      <label>Start Date:</label>
+      <input type="date" required>
+
+      <label>End Date:</label>
+      <input type="date" required>
+
+      <button type="submit" class="btn">Add Exhibition</button>
+    </form>
+  </section>
+
+  <footer>
+    
+  </footer>
+
+</body>
+</html>

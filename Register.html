@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chitrashala - Register</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction:column;
+            height:100vh;
+            background: url("image.jpg") no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        
+        .navbar {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 8px 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .navbar img {
+            height: 40px;
+            margin-right: 15px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #ff6600;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #e05500;
+        }
+
+        .box{
+            width:300px;
+            padding:15px 20px;
+            background:rgb(49, 160, 185);
+            border-radius:10px;
+            box-shadow:0px 0px 12px rgba(0,0,0,0.3);
+            text-align:center;
+            margin-top: 100px; 
+        }
+
+        img{
+            width:70px;
+            margin-bottom:8px;
+        }
+
+        input, select{
+            width:90%;
+            padding:7px;
+            margin-top:6px;
+            border-radius:6px;
+            border:1px solid gray;
+        }
+
+        .btn{
+            background:#ff6600;
+            color:white;
+            cursor:pointer;
+            margin-top:12px;
+            border:none;
+        }
+
+        .btn:hover{
+            background:#e05500;
+        }
+
+        a{color:#ff6600; text-decoration:none;}
+        a:hover{text-decoration:underline;}
+    </style>
+</head>
+<body>
+
+   
+    <div class="navbar">
+        <img src="Screenshot 2025-11-10 at 3.12.54 PM.png" alt="Chitrashala Logo">
+        <a href="home.html">Home</a>
+    </div>
+
+    <div class="box">
+        <img src="Screenshot 2025-11-10 at 3.12.54 PM.png" alt="logo">
+        <h2>Register</h2>
+
+        <form action="login.html">
+            <input type="text" placeholder="Enter Full Name" required>
+            <input type="email" placeholder="Enter Email" required>
+            <input type="text" placeholder="Create Username" required>
+            <input type="password" placeholder="Create Password" required>
+            <input type="password" placeholder="Confirm Password" required>
+            <input type="submit" value="Register" class="btn">
+        </form>
+
+        <p>Already have an account? <a href="login.html">Login</a></p>
+    </div>
+
+</body>
+</html>

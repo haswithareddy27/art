@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chitrashala Art Gallery - Blog</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f6f5f5;
+      --panel: #ffffff;
+      --muted: #9b9b9b;
+      --accent: #2f2f2f;
+      --card-border: rgba(0,0,0,0.06);
+      font-family: "Inter";
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--accent);
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .site-header {
+      background: #ffffff;
+      border-bottom: 1px solid var(--card-border);
+      padding: 14px 28px;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+    }
+
+    .logo img {
+      height: 55px;
+    }
+
+    .spacer { flex: 1; }
+
+    .nav {
+      display: flex;
+      gap: 18px;
+    }
+
+    .nav a {
+      font-size: 16px;
+      padding: 8px 6px;
+      color: var(--muted);
+    }
+
+    .nav a:hover { color: #2f2f2f; }
+
+    .container {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 0 22px;
+    }
+
+    h1 {
+      text-align: center;
+      font-weight: 500;
+      color: #7f7f7f;
+      letter-spacing: 2px;
+    }
+
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .blog-post {
+      background: var(--panel);
+      border: 1px solid var(--card-border);
+      border-radius: 8px;
+      overflow: hidden;
+      transition: all 0.2s ease;
+    }
+
+    .blog-post:hover {
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transform: translateY(-5px);
+    }
+
+    .blog-post img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .post-content {
+      padding: 25px;
+    }
+
+    .post-title {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .post-meta {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+
+    .post-excerpt {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .read-more {
+      display: inline-block;
+      margin-top: 10px;
+      font-weight: 600;
+      color: #2f2f2f;
+    }
+
+    @media(max-width:640px){
+      .blog-post img { height: 150px; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="logo">
+    <img src="Screenshot 2025-11-10 at 3.12.54 PM.png" alt="Logo">
+    Chitrashala
+  </div>
+  <div class="spacer"></div>
+  <nav class="nav">
+    <a href="home.html">Home</a>
+    <a href="artists.html">Artists</a>
+    <a href="Register.html">My Account</a>
+  </nav>
+</header>
+
+<main class="container">
+<h1>ART & GALLERY BLOG</h1>
+
+<section class="blog-grid">
+
+
+<div class="blog-post">
+  <img src="a.-ramachandran-.jpg" alt="Blog 1">
+  <div class="post-content">
+    <div class="post-title">Spotlight on A. Ramachandran</div>
+    <div class="post-meta">By Admin | Nov 16, 2025</div>
+    <div class="post-excerpt">
+      Discover the life and works of renowned artist A. Ramachandran.
+    </div>
+    <a href="blog1.html" class="read-more">Read More →</a>
+  </div>
+</div>
+
+
+<div class="blog-post">
+  <img src="Anchor+Studio+Crawford-Art-Gallery-Exhibition-Design-Branding-2.jpg.webp" alt="Blog 2">
+  <div class="post-content">
+    <div class="post-title">Upcoming Art Exhibition 2025</div>
+    <div class="post-meta">By Admin | Nov 10, 2025</div>
+    <div class="post-excerpt">
+      Join us for our upcoming exhibition showcasing contemporary Indian artists.
+    </div>
+    <a href="blog2.html" class="read-more">Read More →</a>
+  </div>
+</div>
+
+
+<div class="blog-post">
+  <img src="collection.jpeg" alt="Blog 3">
+  <div class="post-content">
+    <div class="post-title">Collecting Indian Art: Tips for Beginners</div>
+    <div class="post-meta">By Admin | Nov 5, 2025</div>
+    <div class="post-excerpt">
+      A guide for first-time art collectors.
+    </div>
+    <a href="blog3.html" class="read-more">Read More →</a>
+  </div>
+</div>
+
+
+<div class="blog-post">
+  <img src="sclupture.jpg" alt="Blog 4">
+  <div class="post-content">
+    <div class="post-title">Exploring Contemporary Indian Sculptures</div>
+    <div class="post-meta">By Admin | Nov 12, 2025</div>
+    <div class="post-excerpt">
+      An overview of modern Indian sculpture.
+    </div>
+    <a href="blog4.html" class="read-more">Read More →</a>
+  </div>
+</div>
+
+
+<div class="blog-post">
+  <a href="https://youtu.be/jPN241k1xdg?si=aCHM3zmQP33AyhAp" target="_blank">
+    <img src="tour.jpeg" alt="Blog 5">
+  </a>
+  <div class="post-content">
+    <div class="post-title">Virtual Tour: Famous Art Galleries in India</div>
+    <div class="post-meta">By Admin | Nov 8, 2025</div>
+    <div class="post-excerpt">
+      Explore India’s most renowned galleries from your home.
+    </div>
+    <a href="https://youtu.be/jPN241k1xdg?si=aCHM3zmQP33AyhAp"
+       class="read-more"
+       target="_blank">
+       Watch Video →
+    </a>
+  </div>
+</div>
+
+
+<div class="blog-post">
+  <img src="miniature.webp" alt="Blog 6">
+  <div class="post-content">
+    <div class="post-title">Understanding Indian Miniature Paintings</div>
+    <div class="post-meta">By Admin | Nov 2, 2025</div>
+    <div class="post-excerpt">
+      History and influence of Indian miniature paintings.
+    </div>
+    <a href="blog6.html" class="read-more">Read More →</a>
+  </div>
+</div>
+
+</section>
+</main>
+
+</body>
+</html>
